@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+header {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    padding: 1.5em;
+}
+
+header h1:link, header h1:visited {
+    color: black;
+}
+
+header h1:hover {
+    color: hsl(0, 0%, 80%);
+}
+
+header h1:active {
+    color: hsl(30, 58%, 78%);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: black;
+}
+
+section {
+    overflow: hidden;
+    height: 800px;
+}
+
+section div {
+    float: left;
+    width: 50%; 
+}
+
+
+@media screen and (max-width: 600px) {
+    section div {
+        width: 100%;
+    }
+}
+
+img {
+    object-fit: cover;
+    height: 400px;  
+    width: 100%;   
+}
+
+img:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+footer img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+footer h1 {
+    text-align: center;
+    margin: 60px auto;
+}
+
+footer img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+footer p, form input, form button, form {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+form label {
+    font-size: 4em;
+}
+
+
+
+
+
+
